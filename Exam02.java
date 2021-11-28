@@ -1,29 +1,26 @@
-package 조건문;
-
-import java.util.Scanner;
 
 public class Exam02 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("나이를 입력하시오 : ");
-		int age = sc.nextInt();
-		if(age<10) {
-			System.out.println("10대 미만입니다.");
-		}
-		else if(age>=10&& age<20) {
-			System.out.println("10대입니다.");
-		}
-		else if(age>=20&& age<30) {
-			System.out.println("20대입니다.");
-		}
-		else if(age>=30&& age<40) {
-			System.out.println("30대입니다.");
-		}
-		else {
-			System.out.println("40대 이상입니다.");
-		}
-
+		// 형 변환
+		
+		//자동 형 변환 
+		int num1 = 30;
+		long num2 = num1;
+		
+		// 강제 형 변환
+		int num3 = 20;
+		byte num4 = (byte)num3;
+		// System.out.println(num4);
+		
+		// 정수와 실수
+		int num5 = 50;
+		float num6 = num5;
+		int num7 = (int)num6;
+		System.out.println(num5);
+		System.out.println(num6);
+		System.out.println(num7);
+		
 	}
 
 }

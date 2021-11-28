@@ -1,26 +1,34 @@
-package 조건문;
-
-import java.util.Scanner;
 
 public class Exam03 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("숫자 입력 : ");
-		int num = sc.nextInt();
-		if(num%10>=5) {
+		/*
+		 * 연산자 종류
+		 * 1. 단항 연산자
+		 * 	1) 증감 연산자
+		 * 2. 이항 연산자
+		 * 	1) 대입 연산자
+		 *  2) 산술 연산자 : +,-,*,/,%
+		 *  3)
+		 * 
+		 * 3. 삼항 연산자
+		 * 
+		 * */
 		
-			
-			System.out.println("반올림 수 : " +(num/10+1)*10);
-			// System.out.println("반올림 수 : " +(num+10)-num%10);
-			
-			
-			
-		}
-		else {
-			System.out.println("반올림 수 : " +(num/10)*10);	
-			//System.out.println("반올림 수 : " +num-(num%10));	
-		}
+		int num1 = 7;
+		int num2 = 3;
+		double num3 = 3.0;
+		
+		System.out.println(num1+num2);
+		System.out.println(num1-num2);
+		System.out.println(num1*num2);
+		System.out.println(num1/num2);
+		System.out.println(num1%num2);
+		System.out.println(num1/num3);
+		System.out.println(num1%num3);
+		
+		
+		
 
 	}
 
